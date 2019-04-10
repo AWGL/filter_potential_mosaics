@@ -16,15 +16,20 @@ def get_settings(config_file):
 
 def get_args():
     """
-    Get command line arguments. Make a flag for every gene name within the config file.
+    Get command line arguments. 
+    Make a flag for every gene name within the config file.
+    Validate and process input arguments.
     """
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description='Makes an expanded list of variants for checking in suspected mosiac cases',
+        epilog='See https://github.com/erikwaskiewicz/mosiac/blob/master/README.md for more details'
+    )
     parser.add_argument('run_folder', action='store', help='Path to run folder in the format /data/results/<run_id>/<panel>/')
     parser.add_argument('sample_id', action='store', help='Sample ID e.g. 19M123456')
 
     # make flag for each gene in config
     for gene in GENES:
-        parser.add_argument(('--'+gene), action='store_true', default=False, help=f'Include {gene} in the output')
+        parser.add_argument(('--'+gene), action='store_true', default=False, help=f'Include {gene} variants in the output')
 
     args = parser.parse_args()
 
@@ -152,7 +157,6 @@ def main():
 
     # Write to file
     output_path = os.path.join(OUTPUT_PATH, f'{run_id}_{sample_id}_filtered_variants.tsv')
-    print(output_path)
     with open(output_path, 'w+') as f:
         f.write('WARNING! This has not been validated. These variants would usually be filtered out by the pipeline, make sure you validate any findings using another method.\n')
         f.write('Variants are shown in reverse order of when they were filtered.\n')
