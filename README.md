@@ -28,7 +28,7 @@ subsequent number corresponds to the ref allele(s) in the same order as they are
 ---
 ### Setup
 
-1. Clone the repository: `git clone https://github.com/erikwaskiewicz/mosiac.git`
+1. Clone the repository: `git clone https://github.com/erikwaskiewicz/filter_potential_mosiacs.git`
 
 2. Setup the Conda environment:
 
@@ -50,7 +50,7 @@ The script is designed to work with TruSightCancer data from the Germline Enrich
 The script will also work for TruSightOne data run through the same pipeline, but additional functionality for applying 
 BED files will likely have to be developed, due to the large number of genes in TruSightOne.
 
-To get help: `python mosaic.py -h`
+To get help: `python filter_potential_mosiacs.py -h`
 
 **Argument descriptions**
 
@@ -61,5 +61,5 @@ To get help: `python mosaic.py -h`
 
 **gene flags**: Each gene within the config file will have it's own flag, to include the gene in the output, use the flag for 
 that gene. To include multiple genes, use multiple flags.  
-e.g. `python mosaic.py <run_folder> <sample_id> --NF1` for NF1 only,  
-or `python mosaic.py <run_folder> <sample_id> --TSC1 --TSC2` for both TSC1 and TSC2.
+e.g. `python filter_potential_mosiacs.py <run_folder> <sample_id> --NF1` for NF1 only,  
+or `python filter_potential_mosiacs.py <run_folder> <sample_id> --TSC1 --TSC2` for both TSC1 and TSC2.
