@@ -159,7 +159,7 @@ def main():
     output_path = os.path.join(OUTPUT_PATH, f'{run_id}_{sample_id}_filtered_variants.tsv')
     with open(output_path, 'w+') as f:
         f.write('WARNING! This has not been validated. These variants would usually be filtered out by the pipeline, make sure you validate any findings using another method.\n')
-        f.write('Variants are shown in reverse order of when they were filtered. See https://github.com/erikwaskiewicz/filter_potential_mosiacs/blob/master/README.md for more info.\n')
+        f.write('Variants are shown in reverse order of when they were filtered. For more info, see https://github.com/erikwaskiewicz/filter_potential_mosiacs/blob/master/README.md\n')
         f.write(f'Run:\t{run_id}\n')
         f.write(f'Sample:\t{sample_id}\n')
         f.write(f'Gene(s):\t{", ".join(genes)}\n')
