@@ -4,7 +4,7 @@ DISCLAIMER - Neither the GermlineEnrichment pipeline or this script have been va
 The purpose of this script is to pull out variants previously filtered as part of the pipeline, so that the 
 clinical scientists have an expanded list of variants that they can manually investigate in the case that there is a 
 suspected mosaic variant. This is not a script to detect mosiac variants, it only parses VCF files that have been filtered. 
-Therefore, there is a high chance that the variants are artefacts and each variant must be manually inspeact in IGV and 
+Therefore, there is a high chance that the variants are artefacts and each variant must be manually inspected in IGV and 
 confirmed using another technique. 
 
 ---
