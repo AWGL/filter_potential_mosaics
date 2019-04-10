@@ -1,4 +1,7 @@
+# path to the bcftools executable file
 bcftools_path: '/share/apps/bcftools-distros/bcftools-1.8/bin/bcftools'
+
+# path to the folder where the output will be saved
 output_path: '/home/ew/mosaic/output/'
 
 # genes to be used in script, in bed format
