@@ -22,7 +22,7 @@ def get_args():
     """
     parser = argparse.ArgumentParser(
         description='Makes an expanded list of variants for checking in suspected mosiac cases',
-        epilog='See https://github.com/erikwaskiewicz/mosiac/blob/master/README.md for more details'
+        epilog='See https://github.com/erikwaskiewicz/filter_potential_mosiacs/blob/master/README.md for more details'
     )
     parser.add_argument('run_folder', action='store', help='Path to run folder in the format /data/results/<run_id>/<panel>/')
     parser.add_argument('sample_id', action='store', help='Sample ID e.g. 19M123456')
@@ -159,7 +159,7 @@ def main():
     output_path = os.path.join(OUTPUT_PATH, f'{run_id}_{sample_id}_filtered_variants.tsv')
     with open(output_path, 'w+') as f:
         f.write('WARNING! This has not been validated. These variants would usually be filtered out by the pipeline, make sure you validate any findings using another method.\n')
-        f.write('Variants are shown in reverse order of when they were filtered.\n')
+        f.write('Variants are shown in reverse order of when they were filtered. See https://github.com/erikwaskiewicz/filter_potential_mosiacs/blob/master/README.md for more info.\n')
         f.write(f'Run:\t{run_id}\n')
         f.write(f'Sample:\t{sample_id}\n')
         f.write(f'Gene(s):\t{", ".join(genes)}\n')
