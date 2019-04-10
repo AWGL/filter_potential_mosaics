@@ -1,0 +1,7 @@
+name: mosiac_env
+channels:
+  - bioconda
+  - r
+  - defaults
+prefix: /home/ew/miniconda3/envs/mosiac_env
+

@@ -1,0 +1,9 @@
+bcftools_path: '/share/apps/bcftools-distros/bcftools-1.8/bin/bcftools'
+output_path: '/home/ew/mosaic/output/'
+
+# genes to be used in script, in bed format
+genes:
+  NF1: ['17', 29421945, 29709134]
+  #NF2: ['22', 29999545, 30094589]
+  TSC1: ['9', 135766735, 135822261]
+  TSC2: ['16', 2097466, 2138716]
