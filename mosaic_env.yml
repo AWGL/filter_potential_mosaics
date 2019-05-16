@@ -1,7 +1,7 @@
-name: mosiac_env
+name: mosaic_env
 channels:
   - bioconda
   - r
   - defaults
-prefix: /home/ew/miniconda3/envs/mosiac_env
+prefix: /home/transfer/miniconda3/envs/mosaic_env
 
