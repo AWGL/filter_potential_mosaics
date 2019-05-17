@@ -33,8 +33,8 @@ subsequent number corresponds to the ref allele(s) in the same order as they are
 2. Setup the Conda environment:
 
   - If not already installed, install miniconda from [here](https://conda.io/en/latest/miniconda.html)  
-  - Make the conda environment: `conda env create -f mosiac_env.yaml`  
-  - Activate the environment: `conda activate mosaic_env.yaml`  
+  - Make the conda environment: `conda env create -f mosiac_env.yml`  
+  - Activate the environment: `conda activate mosaic_env`  
 
 3. Edit the config file:
 
