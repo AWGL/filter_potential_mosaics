@@ -1,7 +1,5 @@
 name: mosaic_env
-channels:
-  - bioconda
-  - r
-  - defaults
-prefix: /home/transfer/miniconda3/envs/mosaic_env
-
+dependencies:
+  - pandas=0.25.0
+  - python=3.6.7
+  - pyyaml=5.1.2
