@@ -1,9 +1,9 @@
-## Expanded filter for potential mosiac cases
+## Expanded filter for potential mosaic cases
 
 DISCLAIMER - Neither the GermlineEnrichment pipeline or this script have been validated to detect mosaic variants.
 The purpose of this script is to pull out variants previously filtered as part of the pipeline, so that the 
 clinical scientists have an expanded list of variants that they can manually investigate in the case that there is a 
-suspected mosaic variant. This is not a script to detect mosiac variants, it only parses VCF files that have been filtered. 
+suspected mosaic variant. This is not a script to detect mosaic variants, it only parses VCF files that have been filtered. 
 Therefore, there is a high chance that the variants are artefacts and each variant must be manually inspected in IGV and 
 confirmed using another technique. 
 
@@ -28,12 +28,12 @@ subsequent number corresponds to the ref allele(s) in the same order as they are
 ---
 ### Setup
 
-1. Clone the repository: `git clone https://github.com/erikwaskiewicz/filter_potential_mosiacs.git`
+1. Clone the repository: `git clone https://github.com/erikwaskiewicz/filter_potential_mosaics.git`
 
 2. Setup the Conda environment:
 
   - If not already installed, install miniconda from [here](https://conda.io/en/latest/miniconda.html)  
-  - Make the conda environment: `conda env create -f mosiac_env.yml`  
+  - Make the conda environment: `conda env create -f mosaic_env.yml`  
   - Activate the environment: `conda activate mosaic_env`  
 
 3. Edit the config file:
