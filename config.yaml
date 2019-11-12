@@ -6,6 +6,7 @@ output_path: '/home/transfer/mosaic/output/'
 
 # genes to be used in script, in bed format
 genes:
+  APC: ['5', 112043195, 112181936]
   NF1: ['17', 29421945, 29709134]
   #NF2: ['22', 29999545, 30094589]
   TSC1: ['9', 135766735, 135822261]
