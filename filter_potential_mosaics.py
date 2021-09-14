@@ -110,14 +110,14 @@ def main():
 
     ### First VCF
 
-    vcf_1 = f'{run_path}/{run_id}_filtered_annotated_roi.vcf'
+    vcf_1 = f'{run_path}/post_processing/results/annotated_vcf/{run_id}_anno.vcf.gz'
     bcftools_command_1 =  f'{BCFTOOLS_PATH} view -Ou -s {sample_id} {vcf_1} | {BCFTOOLS_PATH} query -f "%CHROM;%POS;%REF;%ALT;[ %AD];[ %DP]\n"'
     df_vcf_1 = load_vcf(bcftools_command_1, genes=genes)
 
 
     ### Second VCF
 
-    vcf_2 = f'{run_path}/{run_id}_filtered_annotated_padded.vcf.gz'
+    vcf_2 = f'{run_path}/post_processing/results/gvcf/{run_id}_merged.vcf.gz'
     bcftools_command_2 =  f'{BCFTOOLS_PATH} view -Ou -s {sample_id} {vcf_2} | {BCFTOOLS_PATH} query -f "%CHROM;%POS;%REF;%ALT;[ %AD];[ %DP]\n"'
     df_vcf_2 = load_vcf(bcftools_command_2, genes=genes)
 
@@ -132,7 +132,7 @@ def main():
 
     ### Third VCF
 
-    vcf_3 = f'{run_path}/{sample_id}/{run_id}_{sample_id}.g.vcf'
+    vcf_3 = f'{run_path}/post_processing/results/gvcf/{run_id}_{sample_id}.g.vcf.gz'
     bcftools_command_3 =  f'{BCFTOOLS_PATH} query -f "%CHROM;%POS;%REF;%ALT;[ %AD];[ %DP]\n" {vcf_3}'
     df_vcf_3 = load_vcf(bcftools_command_3, genes=genes)
 

@@ -1,5 +1,5 @@
 # path to the bcftools executable file
-bcftools_path: '/share/apps/bcftools-distros/bcftools-1.8/bin/bcftools'
+bcftools_path: '/Apps/wren/bcftools/1.10.2/bin/bcftools'
 
 # path to the folder where the output will be saved
 output_path: '/home/transfer/mosaic/output/'
