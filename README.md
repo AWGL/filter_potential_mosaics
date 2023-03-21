@@ -63,3 +63,11 @@ To get help: `python filter_potential_mosiacs.py -h`
 that gene. To include multiple genes, use multiple flags.  
 e.g. `python filter_potential_mosiacs.py <run_folder> <sample_id> --NF1` for NF1 only,  
 or `python filter_potential_mosiacs.py <run_folder> <sample_id> --TSC1 --TSC2` for both TSC1 and TSC2.
+
+#### Instructions 
+- Login to Wren as transfer and activate conda environment as above 
+- cd /home/transfer/filter_potential_mosaics
+- python filter_potential_mosaics.py <run_folder/IlluminaTruSightCancer> <sample_id> --gene_flag(s)
+- cd /home/transfer/mosaic/output
+- cp <run_filtered_variants.tsv> <run_folder/sample_id>
+- Email back with location of files
